@@ -3,7 +3,7 @@ package cd.get.ready.algorithms;
 import org.junit.Assert;
 import org.junit.Test;
 
-class EuclidsAlgorithmTest {
+public class EuclidsAlgorithmTest {
 
     @Test
     public void testOne(){
@@ -21,4 +21,11 @@ class EuclidsAlgorithmTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testThree(){
+        EuclidsAlgorithm ea = new EuclidsAlgorithm();
+        int expected = ea.gcd(81, 18);
+        int actual = 9;
+        Assert.assertEquals(expected, actual);
+    }
 }
